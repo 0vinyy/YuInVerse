@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="D:\USUARIO\Downloads\universe-shapes.png">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;               
+            }
+            .menu {
+                width: 100%;
+                height: 50px;
+                background-color: black;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            .menu ul {
+                list-style: none;
+                position: relative;   
+            }
+            .menu ul li {
+                width: 150px;
+                float: left;
+            }
+            .menu a{
+                padding: 15px;
+                display: block;
+                text-decoration: none ;
+                text-align: center ;
+                background-color: black;
+                color: white;
+            } 
+            .menu ul ul{
+                position:absolute;
+                visibility: hidden; 
+            }   
+            .menu ul li:hover ul{
+                visibility: visible;
+            }
+            .menu a:hover{
+                background: #f4f4f4;
+                color: black;
+            }
+            .menu ul ul li{
+                float: none;
+                border-bottom: solid 1px black;
+            }
+
+            body {background-color: grey;}
+            h1{color: honeydew;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            border-style: unset; border-color: black;
+            }
+            ul { color: honeydew;
+                font-family: 'Courier New', Courier, monospace;
+                text-align: left;}
+            a [href="www.google.com"] {
+                    color: hotpink;
+            }
+            label[for="bt_menu"]{
+                padding: 5px;
+                background-color: rgb(0, 0, 0);
+                color: white;
+                font-family: 'Courier New', Courier, monospace;
+                text-align: center;
+                font-size: 30px;
+                cursor: pointer;
+                width: 50px;
+                height: 50px;
+            }
+            #bt_menu{
+                display: none;
+            }
+            label[for="bt_menu"]{
+                display: none;
+            }
+            @media (max-width: 800px){
+                label[for="bt_menu"]{
+                display: block
+                }
+                #bt_menu:checked ~ .menu{
+                    margin-left: 0%;
+                }
+                .menu{
+                    margin-top: 5px ;
+                    margin-left: -100%;
+                    transition: all .4s;
+                }
+                .menu ul li{
+                    width: 100%;
+                    float: none;
+                }
+                .menu ul ul{
+                    position: static;
+                    overflow: hidden;
+                    max-height: 0;
+                    transition: all .4s;
+                }
+                .menu ul li:hover ul{
+                    height: auto;
+                    max-height: 200px;
+                }
+            }
+
+        </style> 
+        <title>YuInVerse</title>
+    </head>
+    <body>
+        <input type="checkbox" id="bt_menu">
+        <label for="bt_menu">&#9776;</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Mangas</a>
+                    <ul>
+                            <li><a href="https://danbooru.donmai.us/data/sample/52/8f/__uzumaki_boruto_and_kawaki_naruto_and_1_more_drawn_by_ssardenn__sample-528f0fa5f8c023a04ab31fcf1bbe0381.jpg">Boruto:Kara's Shadow</a></li>
+                            <li><a href="https://pm1.narvii.com/6307/605cf8e6e7b2fe7a2697cf7c954837aa347ffbbe_hq.jpg">Death Note: Paths of Justice</a></li>
+                            <li><a href="www.google.com">Demons Inside Us</a></li>
+                            <li><a href="www.google.com">Demon Slayer: Twin Hope</a></li>
+                            <li><a href="https://uploads.spiritfanfiction.com/fanfics/historias/201602/fanfiction-dragon-ball-goku-e-vegeta-5140745-020220160826.jpg">Dragon Ball Mega - Future</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Drawings</a></li>
+                <li><a href="#">Concepts</a></li>
+                <li><a href="#">Social</a>
+                    <ul>
+                        <li><a href="https://www.instagram.com/yyniv/">Instagram</a></li>
+                        <li><a href="https://github.com/0vinyy">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/vinícios-oliveira">LinkedIn</a></li>
+                        <li><a href="https://www.deviantart.com/vinyy0">DeviantArt</a></li>
+                    </ul>    
+                </li>
+            </ul>
+        </nav>
+        <h1>Here you can read my histories.</h1>
+        <h1>Welcome! </h1>
+        <h1>:)</h1>
+    </body>
